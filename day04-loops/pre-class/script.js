@@ -22,11 +22,26 @@ Create nested loops in the loopWithinLoopMain function, where the outer loop run
 Concatenate "hello" to myOutputValue in the inner loop. How many times do we see "hello"?
 */
 
-var loopWithinLoopMain = function (input) {};
+var loopWithinLoopMain = function (input) {
+  var myOutputValue = "";
+  for (var outerCounter = 0; outerCounter < input; outerCounter += 1) {
+    console.log(`Outer Counter: ${outerCounter}`);
+    for (var innerCounter = 0; innerCounter < 2; innerCounter += 1) {
+      console.log(`Inner Counter: ${innerCounter}`);
+      myOutputValue += " hello!";
+    }
+    myOutputValue += " Banana <br/>";
+  }
+  return myOutputValue;
+};
 // Attempt the Loop Within Loop exercise from the Loops module below with loopWithinLoopMain as the main function.
 
-var infiniteLoopMain = function (input) {
+var infiniteLoopMain = function () {
   // Attempt the Infinite Loop exercise from the Loops module below with infiniteLoopMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = "";
+  for (var outerCounter = 0; outerCounter < Infinity; outerCounter += 1) {
+    console.log(`Loop: ${myOutputValue}`);
+    myOutputValue += `Infinite Tsukoyomi`;
+  }
   return myOutputValue;
 };
