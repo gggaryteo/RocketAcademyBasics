@@ -211,6 +211,5 @@ var main = function (input) {
     console.log(`Next Game Mode: ${gameMode}`);
     myOutputValue = totalScore();
   }
-
   return myOutputValue;
 };
