@@ -182,6 +182,8 @@ var playReverseSps = function (userName, userGuess) {
   return genericOutput + generateGameStats();
 };
 
+// Game Logic: Muk-Jii-Paa
+
 var main = function (input) {
   // Set to name mode first
   if (currentGameMode == `nameMode`) {

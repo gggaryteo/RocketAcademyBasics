@@ -184,7 +184,7 @@ var diceWithinMain = function (userGuess) {
 
 var diceWithin2DiceMain = function (input) {
   // Complete the More Comfortable: Dice Within with 2 Dice exercise below with diceWithin2DiceMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = "HELLO TEST";
   return myOutputValue;
 };
 

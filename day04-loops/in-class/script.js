@@ -207,18 +207,18 @@ var multiDiceBaseMain = function (input) {
 
 var multiDiceMultiRoundMain = function (input) {
   // Complete the More Comfortable: Multi-Round Multi-Dice Game exercise below with multiDiceMultiRoundMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = "TEST";
   return myOutputValue;
 };
 
 var multiDiceTwoPlayerMain = function (input) {
   // Complete the More Comfortable: Two Player Multi-Round Multi-Dice Game exercise below with multiDiceTwoPlayerMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = "TEST";
   return myOutputValue;
 };
 
 var multiDiceMultiPlayerMain = function (input) {
   // Complete the More Comfortable: Multi-Player Multi-Round Multi-Dice Game exercise below with multiDiceMultiPlayerMain as the main function.
-  var myOutputValue = "hello world";
+  var myOutputValue = "TEST";
   return myOutputValue;
 };
