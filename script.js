@@ -52,38 +52,38 @@ var main = function (input) {
 
 // The user can guess by putting in one of two values: "odd" or "even". They win if the dice roll is odd or even.
 
-var rollDice = function () {
-  // Generate a decimal from 0 through 6, inclusive of 0 and exclusive of 6.
-  var randomDecimal = Math.random() * 6;
-  // Remove the decimal with the floor operation.
-  // This will be an integer from 0 to 5 inclusive.
-  var randomInteger = Math.floor(randomDecimal);
+// var rollDice = function () {
+//   // Generate a decimal from 0 through 6, inclusive of 0 and exclusive of 6.
+//   var randomDecimal = Math.random() * 6;
+//   // Remove the decimal with the floor operation.
+//   // This will be an integer from 0 to 5 inclusive.
+//   var randomInteger = Math.floor(randomDecimal);
 
-  // Add 1 to get valid dice rolls of 1 through 6 inclusive.
-  var diceNumber = randomInteger + 1;
+//   // Add 1 to get valid dice rolls of 1 through 6 inclusive.
+//   var diceNumber = randomInteger + 1;
 
-  return diceNumber;
-};
+//   return diceNumber;
+// };
 
-var main = function (input) {
-  var randomDiceNumber = rollDice();
-  var myOutputValue = `You rolled ${randomDiceNumber}. Your guess was ${input}.`;
-  // If the dice roll is even, and the input is even, user wins.
-  // If the dice roll is odd, and the output is odd, user wins.
-  // If the dice roll is neither even or odd, user loses.
-  if (
-    (input % 2 == 0 && randomDiceNumber % 2 == 0) ||
-    (input % 2 == 1 && randomDiceNumber % 2 == 1)
-  ) {
-    myOutputValue += `You Win! Congrats!`;
-  } else if (input == "palatable papaya") {
-    myOutputValue = `You entered my favorite food. You still win nevertheless! Congrats!`;
-  } else {
-    myOutputValue += `You Lose! Try again.`;
-  }
+// var main = function (input) {
+//   var randomDiceNumber = rollDice();
+//   var myOutputValue = `You rolled ${randomDiceNumber}. Your guess was ${input}.`;
+//   // If the dice roll is even, and the input is even, user wins.
+//   // If the dice roll is odd, and the output is odd, user wins.
+//   // If the dice roll is neither even or odd, user loses.
+//   if (
+//     (input % 2 == 0 && randomDiceNumber % 2 == 0) ||
+//     (input % 2 == 1 && randomDiceNumber % 2 == 1)
+//   ) {
+//     myOutputValue += `You Win! Congrats!`;
+//   } else if (input == "palatable papaya") {
+//     myOutputValue = `You entered my favorite food. You still win nevertheless! Congrats!`;
+//   } else {
+//     myOutputValue += `You Lose! Try again.`;
+//   }
 
-  return myOutputValue;
-};
+//   return myOutputValue;
+// };
 
 // If the input is not "even" or "odd", ask the user to input only even and odd numbers
 // If the dice roll is an even number and the guess is an even number, user wins.

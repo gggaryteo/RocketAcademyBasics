@@ -181,6 +181,8 @@ function totalScore() {
     return `Amazing Player 1, you're leading by a difference of ${difference}. <br><br><b>Leaderboard</b><br><br> Player 1: ${sumOfPlayerOne} <br> Player 2: ${sumOfPlayerTwo} <br><br> Press submit to play again!`;
   } else if (sumOfPlayerTwo > sumOfPlayerOne) {
     return `Amazing Player 2, you're leading by a difference of ${difference}. <br><br><b>Leaderboard</b><br><br> Player 1: ${sumOfPlayerOne} <br> Player 2: ${sumOfPlayerTwo} <br><br> Press submit to play again!`;
+  } else if (sumOfPlayerOne == sumOfPlayerTwo) {
+    return `Both of you are going at each others' throat. <br><br><b>Leaderboard</b><br><br> Player 1: ${sumOfPlayerOne} <br> Player 2: ${sumOfPlayerTwo} <br><br> Play again and determine the winner.`;
   }
 }
 
